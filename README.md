@@ -26,9 +26,9 @@ To make this work you'll need to set things up on the service in question, Workp
 * Set up an API Gateway trigger on the left hand side.  You can create a new API trigger for this function.  There's some useful information [here](https://docs.aws.amazon.com/apigateway/latest/developerguide/getting-started.html) to guide you through the process if you're not familiar.  The endpoint you create can be arbitrarily named so long as it supports POST.
 * In the code area, copy-paste the contents of `handler.py`.
 * Under environment variables, you'll need to set the following values:
-** `FB_API_TOKEN` - Set this to the api token you requested from Workplace in the previous steps.
-** `FB_GROUP_ID` - Set this to the numeric ID of the group you want to post to.
-** `HELPSCOUT_KEY` - Set this to a sufficiently long/complicated secret key you want to use to sign Helpscout requests. Take note of it
+  * `FB_API_TOKEN` - Set this to the api token you requested from Workplace in the previous steps.
+  * `FB_GROUP_ID` - Set this to the numeric ID of the group you want to post to.
+  * `HELPSCOUT_KEY` - Set this to a sufficiently long/complicated secret key you want to use to sign Helpscout requests. Take note of it
 * Click through on the API Gateway trigger and expand the details to get the URL of the endpoint and take note of it.
 
 
