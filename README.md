@@ -36,4 +36,7 @@ To make this work you'll need to set things up on the service in question, Workp
 
 Below are the currently implemented integrations:
 
+* [Clubhouse](https://clubhouse.io) - https://github.com/physera/clubhouse-workplace-lambda
+* [Github](https://github.com) - https://github.com/physera/github-workplace-lambda
 * [Helpscout](https://helpscout.net) - https://github.com/physera/helpscout-workplace-lambda
+* [Sentry](https://sentry.io) - https://github.com/physera/sentry-workplace-lambda
