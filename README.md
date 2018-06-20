@@ -2,7 +2,7 @@
 
 ## Overview
 
-This documents contains pointers to other repositories which implement integrations between various services and [Facebook Workplace](https://workplace.facebook.com). The strategy employed by these integrations is to:
+This documents contains pointers to other repositories which implement integrations between various services and [Facebook Workplace](https://workplace.facebook.com). These integrations allow events in these services to create posts in a Facebook Workplace group. The strategy employed by these integrations is to:
 
 1. Set up callbacks for a particular service to hit an endpoint hosted on [AWS Lambda](https://aws.amazon.com/lambda/).
 2. Set up the Workplace environment with a bot for the service.
@@ -28,7 +28,6 @@ To make this work you'll need to set things up on the service in question, Workp
 * Under environment variables, you'll need to set the following values:
   * `FB_API_TOKEN` - Set this to the api token you requested from Workplace in the previous steps.
   * `FB_GROUP_ID` - Set this to the numeric ID of the group you want to post to.
-  * `HELPSCOUT_KEY` - Set this to a sufficiently long/complicated secret key you want to use to sign Helpscout requests. Take note of it
 * Click through on the API Gateway trigger and expand the details to get the URL of the endpoint and take note of it.
 
 
